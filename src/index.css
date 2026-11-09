@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-brand {
+    font-family: 'Cinzel', 'Times New Roman', Times, 'Baskerville', 'Playfair Display', serif;
+  }
+  .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  .font-body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  .font-timer {
+    font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes float-flag {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.95;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(8deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-flag {
+  animation-name: float-flag;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dramatic-pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 10px 25px rgba(212, 175, 55, 0.25));
+  }
+  50% {
+    transform: scale(1.028);
+    filter: drop-shadow(0 15px 35px rgba(220, 38, 38, 0.35));
+  }
+}
+
+.animate-dramatic-pulse {
+  animation: dramatic-pulse 1s ease-in-out infinite;
+}
+
+@keyframes urgent-pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 10px 30px rgba(220, 38, 38, 0.4));
+  }
+  50% {
+    transform: scale(1.045);
+    filter: drop-shadow(0 20px 45px rgba(220, 38, 38, 0.6));
+  }
+}
+
+.animate-urgent-pulse {
+  animation: urgent-pulse 0.5s ease-in-out infinite;
+}
+
+@keyframes banner-reveal {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-banner-reveal {
+  animation: banner-reveal 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Subtle elegant gold gradient borders and text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #996515 0%, #D4AF37 40%, #F5E08E 70%, #AA771C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(to right, #B8860B, #F3E5AB, #D4AF37) 1;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #FAF8F0 0%, #FFFFFF 50%, #F7F4EA 100%);
+}

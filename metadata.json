@@ -1,0 +1,6 @@
+{
+  "name": "Official Competition Timer - SMAS Tunas Baru Jin Seung",
+  "description": "Aplikasi pengatur waktu perlombaan resmi SMAS Tunas Baru Jin Seung dengan desain emas elegan, optimalisasi layar 75 inci IFP, efek audio dramatis, dan animasi bendera Merah Putih.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
